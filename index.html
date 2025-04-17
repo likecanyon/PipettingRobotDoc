@@ -35,10 +35,31 @@
   <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <!-- head.html or index.html -->
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="…"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  /> #updated font awsome 
+
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <head>
+    …
+    <link rel="stylesheet" href="./static/css/index.css">
+    <!-- other scripts and links -->
+  
+    <style>
+      .publication-links .external-link {
+        color: white !important;
+      }
+    </style>
+  </head>
+  
 </head>
 <body>
 
@@ -66,7 +87,7 @@
               <!-- PDF Link. -->
               <span class="link-block">
                 <a href="./static/CN114917975A.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
+                   class="external-link button is-normal is-rounded is-dark has-text-white">
                   <span class="icon has-text-white">
                       <i class="fas fa-file-pdf"></i>
                         
@@ -78,24 +99,24 @@
                 <a href="https://patents.google.com/patent/CN114917975A/en"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                    <i class="fa-brands fa-google  has-text-white"></i>
                   </span>
                   <span>GooglePatent</span>
                 </a>
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a href="https://www.bilibili.com/video/BV12e4y147F5/?spm_id_from=333.1387.homepage.video_card.click"
                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-bilibili"></i>
+                  <span class="icon has-text-white">
+                    <i class="fa-brands fa-bilibili"></i>
 
                   </span>
-                  <span>Video</span>
+                  <span>Bilibili</span>
                 </a>
               </span>
               <!-- Code Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -103,16 +124,16 @@
                   </span>
                   <span>Code</span>
                   </a>
-              </span>
+              </span> -->
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
             </div>
 
           </div>
