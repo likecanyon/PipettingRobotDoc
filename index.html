@@ -151,18 +151,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            There is a great number of labourious work such as pipetting orperations in chemical and biological labs, which researchers are struggling with. 
-            We present a robotic solution to tackle with this issue.
+Manual pipetting and related repetitive tasks in chemical and biological laboratories are time-consuming and prone to human error. 
+To address this, we developed a fully automated robotic pipetting system. 
+First, we designed a custom pipetting end-effector—capable of aspirating samples, dispensing them, and ejecting used tips—and mounted it on a UR5e robotic arm. 
+Next, we engineered a specialized work plate to securely hold pipette tip racks and receiving vessels in fixed positions, and used robot teaching to register their precise coordinates. 
+Our control strategy uses vision-guided waypoint generation to precisely locate tip boxes and vessels, directing the robot to the correct coordinates. 
+To guarantee reliable tip engagement, we overlay a force controller that monitors and regulates contact force during insertion and removal, dramatically boosting engagement success rates. 
+We validate the complete system through experimental trials, demonstrating its ability to perform complex pipetting operations consistently and with minimal human intervention. 
+This robotic solution significantly reduces manual labor and improves repeatability.
 
           </p>
-          <p>
-            We introduce a tailored end-effector for the pipetting operation which can be amounted on the end of a robotic arm. 
 
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can 
 
-          </p>
         </div>
       </div>
     </div>
@@ -190,10 +190,10 @@
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Tips engagement without force controller</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+To evaluate the impact of the force controller,
+ we conducted comparative experiments on tip engagement, assessing performance both with and without force control.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/dollyzoom-stacked"
@@ -202,69 +202,6 @@
         </div>
       </div>
       <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_star"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrappe">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-
-
-
 
   </div>
 </section>
